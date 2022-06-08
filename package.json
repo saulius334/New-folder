@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "dead-server --port=3000 --host=localhost",
     "number": "nodemon ./js/number.js",
+    "string": "nodemon ./js/string.js",
+    "function": "nodemon ./js/function.js",
+    "if": "nodemon ./js/if.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
