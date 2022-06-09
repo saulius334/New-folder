@@ -11,6 +11,8 @@
     "if": "nodemon ./js/if.js",
     "testukai": "nodemon ./js/testukai.js",
     "ternary": "nodemon ./js/ternary.js",
+    "array": "nodemon ./js/array.js",
+    "for": "nodemon ./js/for.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
