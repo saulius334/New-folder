@@ -52,8 +52,8 @@ if (day ===1) {
 }
 console.log(`----------------------------------------`);
 
-const temper = 72;
-const lietus = false;
+const temper = 13;
+const lietus = true;
 const nuokadasilta = 12;
 
 if (lietus === true) { 
@@ -82,3 +82,6 @@ if (lietus === true && temper >= nuokadasilta) {
 } else if (lietus === false && temper < nuokadasilta) {
     console.log(`2)pasiimk striuke`);
 } 
+
+const ats = lietus ? temper >= nuokadasilta ? `3) varom nuogi` : `3) pasimk palta ir sketi` : temper >= nuokadasilta ? `3) gali eit nuogas nes silta` : `3)pasiimk striuke`;
+console.log(ats);
