@@ -221,17 +221,115 @@ for (i = zodis.length - 1; i >= 0 ; i--) {
 console.log(backwards);
 
 //3
-let pirmasliekana = 0;
-let kiekis = 0;
-for (i = 0; i >= -11; i--) {
-  pirmasliekana = i / 3;
-  if ( pirmasliekana === Math.floor(pirmasliekana)) {
-    kiekis + 1;
+let pirmasliekana = -1;
+for (i = 0; i <= 11; i++) {
+  if (i % 3 === 0) {
+    pirmasliekana += 1;
   }
+}
+
+let antrasliekana = -1;
+for (i = 0; i <= 11; i++) {
+  if (i % 5 === 0) {
+    antrasliekana += 1;
+  }
+}
+let treciasliekana = -1;
+for (i = 0; i <= 11; i++) {
+  if (i % 7 === 0) {
+    treciasliekana += 1;
+  }
+}
+console.log(`Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra ${pirmasliekana} vienetai.`);
+console.log(`Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra ${antrasliekana} vienetai.`);
+console.log(`Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra ${treciasliekana} vienetai.`);
+console.log(`----`);
+let ketvirtasliekana = 0;
+for (i = 8; i <= 31; i++) {
+  if (i % 3 === 0) {
+    ketvirtasliekana += 1;
+  }
+}
+let penktasliekana = 0;
+for (i = 8; i <= 31; i++) {
+  if (i % 5 === 0) {
+    penktasliekana += 1;
+  }
+}
+let sestasliekana = 0;
+for (i = 8; i <= 31; i++) {
+  if (i % 7 === 0) {
+    sestasliekana += 1;
+  }
+}
+
+console.log(`Skaičių intervale tarp 8 ir 31, besidalijančių be liekanos iš 3 yra ${ketvirtasliekana} vienetai.`);
+console.log(`Skaičių intervale tarp 8 ir 31, besidalijančių be liekanos iš 5 yra ${penktasliekana} vienetai.`);
+console.log(`Skaičių intervale tarp 8 ir 31, besidalijančių be liekanos iš 7 yra ${sestasliekana} vienetai.`);
+console.log(`----`);
+
+let septintasliekana = -1;
+for (i = -18; i <= 18; i++) {
+  if (i % 3 === 0) {
+    septintasliekana += 1;
+  }
+}
+let astuntasliekana = -1;
+for (i = -18; i <= 18; i++) {
+  if (i % 5 === 0) {
+    astuntasliekana += 1;
+  }
+}
+let devintasliekana = -1;
+for (i = -18; i <= 18; i++) {
+  if (i % 7 === 0) {
+    devintasliekana += 1;
+  }
+}
+console.log(`Skaičių intervale tarp 8 ir 31, besidalijančių be liekanos iš 3 yra ${septintasliekana} vienetai.`);
+console.log(`Skaičių intervale tarp 8 ir 31, besidalijančių be liekanos iš 5 yra ${astuntasliekana} vienetai.`);
+console.log(`Skaičių intervale tarp 8 ir 31, besidalijančių be liekanos iš 7 yra ${devintasliekana} vienetai.`);
+console.log(`------------Funkcijos--------------------`);
+
+//1
+function tusciaFunkcija () {
+  return false;
+}
+console.log(tusciaFunkcija());
+
+//2
+function daugyba(a, b) {
+  daug = a * b;
+  return daug;
+}
+console.log( daugyba(pirmas, antras));
+console.log( daugyba(antras, trecias));
+console.log( daugyba(pirmas, trecias));
+
+//3
+/*
+let ilgis = 0;
+const simts = 100;
+const stuke = 1000;
+const belekiek = `12412494809129038`;
+const asd = `asd`;
+
+function skaitmenuKiekisSkaiciuje(a) {
+  if ( a !== Number) {
+    console.log(`Pateikta netinkamo tipo reikšmė.`);
+  } else {
+    ilgis = a.length
+  }
+  return ilgis;
+}
+console.log(skaitmenuKiekisSkaiciuje(simts));
+console.log(skaitmenuKiekisSkaiciuje(stuke));
+console.log(skaitmenuKiekisSkaiciuje(belekiek));
+console.log(skaitmenuKiekisSkaiciuje(true));
+console.log(skaitmenuKiekisSkaiciuje(asd));
+*/
+
+//4
+function didziausiasSkaiciusSarase (a) {
   
 }
-console.log(pirmasliekana);
-console.log(kiekis);
-console.log(`Skaičių intervale tarp 0 ir -11, besidalijančių be liekanos iš 3 yra 4 vienetai`);
-console.log(`Skaičių intervale tarp 0 ir -11, besidalijančių be liekanos iš 5 yra 4 vienetai`);
-console.log(`Skaičių intervale tarp 0 ir -11, besidalijančių be liekanos iš 7 yra 2 vienetai.`);
