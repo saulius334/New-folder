@@ -37,7 +37,7 @@
     const vidurkis = suma / kiekis;
     console.log(`vidurkis:`,vidurkis);
 
-    const random = [7, 777, `saulius`, 9, true, `labs`, false];
+    const random = [7, 777, `saulius`, 9, true, `labs`, false]; //taip nerasyti
 
 
 
