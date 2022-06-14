@@ -307,29 +307,48 @@ console.log( daugyba(antras, trecias));
 console.log( daugyba(pirmas, trecias));
 
 //3
-/*
+
 let ilgis = 0;
 const simts = 100;
 const stuke = 1000;
-const belekiek = `12412494809129038`;
+const belekiek = 12412494809129038;
 const asd = `asd`;
+const bl = true;
+const qwert = NaN;
 
 function skaitmenuKiekisSkaiciuje(a) {
-  if ( a !== Number) {
-    console.log(`Pateikta netinkamo tipo reikšmė.`);
+  if (a === a / 1) {
+    ilgis = `${a}`.length
   } else {
-    ilgis = a.length
+    console.log(`Pateikta netinkamo tipo reikšmė.`);
   }
   return ilgis;
 }
 console.log(skaitmenuKiekisSkaiciuje(simts));
 console.log(skaitmenuKiekisSkaiciuje(stuke));
 console.log(skaitmenuKiekisSkaiciuje(belekiek));
-console.log(skaitmenuKiekisSkaiciuje(true));
+console.log(skaitmenuKiekisSkaiciuje(bl));
 console.log(skaitmenuKiekisSkaiciuje(asd));
-*/
+console.log(skaitmenuKiekisSkaiciuje(qwert));
+
 
 //4
-function didziausiasSkaiciusSarase (a) {
-  
+
+
+let bmis = 0;
+function bmi(weight, height) {
+  bmis = weight / (Math.pow(height, 2));
+  if (bmis <= 18.5) {
+   console.log(`under`);
+  } else if (bmis <= 25.0) {
+   console.log(`norm`);
+  } else if (bmis <= 30.0) {
+    console.log(`over`);
+  } else {
+  console.log(`obese`);
+  }
+  return bmis;
 }
+
+console.log(bmis);
+console.log(bmi(59.8, 1.56));
