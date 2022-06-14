@@ -99,3 +99,21 @@ const difReduce = marks.reduce((total, mark) => total - mark); // sudifavo
 const difReduce20 = marks.reduce((total, mark) => total - mark, 20);
 console.log(difReduce);
 console.log(difReduce20);
+
+console.log(`--------------`);
+//sort
+const list = [10, 2, 8, 4, 6, 1, 123, 5, 90]
+const minMaxlist = [...list].sort((a, b) => a - b);
+
+
+
+console.log(list);
+console.log(minMaxlist);
+
+const strlist = [`g`, `a`, `f`, `w`]
+const minMaxstrlist = [...strlist].sort()
+const maxminstrlist = [...strlist].sort((a, b) => a > b ? -1 : 1);
+
+console.log(strlist);
+console.log(minMaxstrlist);
+console.log(maxminstrlist);
