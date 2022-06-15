@@ -335,20 +335,45 @@ console.log(skaitmenuKiekisSkaiciuje(qwert));
 //4
 
 
-let bmis = 0;
-function bmi(weight, height) {
-  bmis = weight / (Math.pow(height, 2));
-  if (bmis <= 18.5) {
-   console.log(`under`);
-  } else if (bmis <= 25.0) {
-   console.log(`norm`);
-  } else if (bmis <= 30.0) {
-    console.log(`over`);
-  } else {
-  console.log(`obese`);
-  }
-  return bmis;
-}
+// let bmis = 0;
+// function bmi(weight, height) {
+//   bmis = weight / (Math.pow(height, 2));
+//   if (bmis <= 18.5) {
+//    console.log(`under`);
+//   } else if (bmis <= 25.0) {
+//    console.log(`norm`);
+//   } else if (bmis <= 30.0) {
+//     console.log(`over`);
+//   } else {
+//   console.log(`obese`);
+//   }
+//   return bmis;
+// }
 
-console.log(bmis);
-console.log(bmi(59.8, 1.56));
+// console.log(bmis);
+// console.log(bmi(59.8, 1.56));
+
+// function getGrade (s1, s2, s3) {
+//   grade = (s1 + s2 + s3) / 3;
+//     if (grade <= 100 && grade >= 90) {
+//       return `A`;
+//     } else if (grade < 90  && grade >= 80) {
+//       return `B`;
+//     } else if (grade < 80 && grade >= 70) {
+//       return `C`;
+//     } else if (grade < 70 && grade >= 60) {
+//       return `D`;
+//     } else {
+//       return `F`;
+//     }
+// }
+
+// function repeatStr (n, s) {
+//   let repeated = ` `;
+//   for (let i = 0; i <= n; i++) {
+//     repeated = repeated + s;
+//   }
+//   return repeated;
+// }
+// console.log(repeatStr(5, `hello`));
+

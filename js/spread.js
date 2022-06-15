@@ -25,22 +25,22 @@
 // console.log(mokiniaicopy);
 // console.log(mokiniai);
 
-// let sum = 0;
-// function positiveSum(a) {
-//     for (i = 0; i <= a.length - 1; i++) {    
-//         if (a[i] > 0) {
-//           console.log(a);
-//     sum = sum + a[i];
-//     return sum
-//   }
-//   }
-// }
+let sum = 0;
+function positiveSum(a) {
+    for (i = 0; i <= a.length - 1; i++) {    
+        if (a[i] > 0) {
+          console.log(a);
+    sum = sum + a[i];
+    return sum
+  }
+  }
+}
 
 
-// const nmb = [1,-4,7,12];
-// console.log(positiveSum(nmb));
-// console.log(nmb);
-// console.log(sum);
+const nmb = [1,-4,7,12];
+console.log(positiveSum(nmb));
+console.log(nmb);
+console.log(sum);
 
 let number = 0;
 var summation = function (num) {

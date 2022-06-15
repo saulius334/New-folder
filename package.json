@@ -10,6 +10,7 @@
     "function": "nodemon ./js/function.js",
     "if": "nodemon ./js/if.js",
     "testukai": "nodemon ./js/testukai.js",
+    "letter-count": "nodemon ./js/letter-count.js",
     "ternary": "nodemon ./js/ternary.js",
     "array": "nodemon ./js/array.js",
     "for": "nodemon ./js/for.js",
@@ -18,6 +19,8 @@
     "switch": "nodemon ./js/switch.js",
     "other-loops": "nodemon ./js/other-loops.js",
     "string-array": "nodemon ./js/string-array.js",
+    "object": "nodemon ./js/object.js",
+    "math": "nodemon ./js/math.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

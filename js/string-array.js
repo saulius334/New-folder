@@ -28,3 +28,6 @@ for (let i = 1; i < person.length; i++) {
 }
 inicialai2 += `.`
 console.log(inicialai2);
+
+
+
