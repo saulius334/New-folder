@@ -30,4 +30,12 @@ inicialai2 += `.`
 console.log(inicialai2);
 
 
-
+function find_average(array) {
+    let count = 0;
+    let sum = 0;
+    for (let i = 0; i <= array.lenght; i++) {
+      count = count + array[i]
+      sum++
+    }
+    return count / sum 
+    }

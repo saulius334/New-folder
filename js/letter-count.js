@@ -43,3 +43,23 @@ const bigtext = `as tu jis jos mes jie gal ir tu as tu jis jos mes jie gal ir tu
 
 
  console.log(wordcount(bigtext));
+let uniquewordscount = 0;
+ const dic = wordcount(bigtext);
+    for (const key in dic) {
+        uniquewordscount++
+        console.log(key, `)`, dic[key]);
+    }
+
+    console.log(`unique words:${uniquewordscount}`);
+
+
+    let sum = 0;
+function positiveSum(arr) {
+  for (let i = 0; i<=arr.lenght; i++) {
+    const number = arr[i];
+      if (number > 0) {
+        sum = sum + number;
+      }
+  }
+  return sum;
+}

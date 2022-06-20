@@ -6,14 +6,14 @@ for (let i = 0; i<marks.length; i++) {
     const mark = marks[i];
     console.log(mark);
 }
-console.log(`--------------`);
+console.log(`-------for-of-------`);
 //for-of
 
 for (const mark of marks) {
     console.log(mark);
 }
 
-console.log(`--------------`);
+console.log(`--------while------`);
 // while
 let i = 0;
 while (i < marks.length) {
@@ -22,7 +22,7 @@ console.log(mark);
 i++
 }
 //while paklausia pirma, poto daro ///////// do-while pirma padaro, o poto klausia ar pasiektas 
-console.log(`--------------`);
+console.log(`--------dowhile------`);
 //do-while
 let i2 = 0;
 do {
@@ -31,13 +31,13 @@ do {
     i2++
 } while (i2 < marks.length);
 
-console.log(`--------------`);
+console.log(`-----foreach---------`);
 // foreach
 
 marks.forEach(mark => {
     console.log(mark);
 })
-console.log(`--------------`);
+console.log(`-----map---------`);
 
 // map            kaip modifikuoti kiekviena nari
 
@@ -54,7 +54,7 @@ console.log(rezMap);
 // console.log(rezMap);
 
 
-console.log(`--------------`);
+console.log(`------filter--------`);
 
 // filter
 
@@ -71,7 +71,7 @@ const filterMarks = marks
 console.log(marks);
 console.log(filterMarks);
 
-console.log(`--------------`);
+console.log(`------map/filter--------`);
 
 // map and filter combo
 
