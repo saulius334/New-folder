@@ -65,8 +65,12 @@ for (const person of list) {
         }
     }
 }
-const wtf = family.getKeyByVa
-return `is` + wtf
+
+
+
+
+const wtf = Object.keys(family).find(key => family[key] === age)
+return wtf
 }
 
 console.log(oldest(family));
