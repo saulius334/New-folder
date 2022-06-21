@@ -376,4 +376,86 @@ console.log(skaitmenuKiekisSkaiciuje(qwert));
 //   return repeated;
 // }
 // console.log(repeatStr(5, `hello`));
+console.log(`----------`);
+const input = '42436354987010059671909326664280265241218950622191428548349858481951140291738242397106833459913182847411532447857310795944427387851292416798906921687814';
+const splited = input.match(/.{1,2}/g)
 
+function counter(bl) {
+  const skaiciai = {};
+
+      for(const Symbol of bl) {
+          if(skaiciai[Symbol]) {
+              skaiciai[Symbol]++;
+          } else {
+         skaiciai[Symbol] = 1;
+          }
+      }
+  
+      let arr = Object.values(skaiciai)
+      let max = Math.max(...arr)
+      let zaeb = Object.keys(skaiciai).find(key => skaiciai[key] === max)
+    console.log(max);
+    return `numeris ${zaeb} pasikartoja ${max}`
+  }
+  console.log(counter(splited));
+  
+
+  // function pairCount(str) {
+  //   const ats = Array(100).fill(0);
+  //   for (let i = 0; i < str.length; i++) {
+  //     const current = str[i];
+  //     const previous = str[i - 1];
+  //     const index = parseInt(previous + current)
+  //     ats[+index]++
+  //   }
+  //   return ats;
+  // }
+
+  // console.log(pairCount(input));
+  // console.log();
+
+
+
+  // console.clear();
+
+  // function max(list) {
+  //   let maxnumber = -Infinity;
+
+
+  //   for (const n of list) {
+  //     if (Array.isArray(n)) {
+  //       const maxchild = max(n);
+  //       if(maxchild > maxnumber && typeof maxchild === `number`) {
+  //         maxnumber = maxchild;
+  //       }
+  //     } else {
+  //       if (typeof n !== `number`)
+  //     }
+  //     if(n > maxnumber) {
+  //       maxnumber = n
+  //     }
+  //   }
+  //     if (maxnumber === -Infinity) {
+  //       return `error`;
+  //     }
+    
+  //   return maxnumber
+  // }
+
+  // const l1 = [1, 2, 5, 6, 10, 3, 3.14, 6]
+  // console.log(max(l1), `->`, 10);
+
+  // const l2 = [1, 2];
+  // console.log(max(l2), `->`, 2);
+
+  // const l3 = [1, `labas`, 5, 22]
+  // console.log(max(l3), `->`, 22);
+
+  // const l4 = [-1, `labas`, -5, -22]
+  // console.log(max(l4), `->`, -1);
+
+  // const l5 = []
+  // console.log(max(l5), `->`, `error`);
+
+  // const l6 = [`labas`, true, false]
+  // console.log(max(l6), `->`, `error`);

@@ -58,18 +58,18 @@ console.log(`------filter--------`);
 
 // filter
 
-// const filterMarks = marks
-//         .filter(mark => mark >= 2)
-//         .filter(mark => mark <= 5);
-// console.log(marks);
-// console.log(filterMarks);
+const filterMarks = marks
+        .filter(mark => mark >= 2)
+        .filter(mark => mark <= 5);
+console.log(marks);
+console.log(filterMarks);
 
 // efektyviau, sudeta i viena eilute
 
-const filterMarks = marks
+const filterMarkss = marks
         .filter(mark => mark >= 2 && mark <= 5)
 console.log(marks);
-console.log(filterMarks);
+console.log(filterMarkss);
 
 console.log(`------map/filter--------`);
 
@@ -100,7 +100,7 @@ const difReduce20 = marks.reduce((total, mark) => total - mark, 20);
 console.log(difReduce);
 console.log(difReduce20);
 
-console.log(`--------------`);
+console.log(`-----sort---------`);
 //sort
 const list = [10, 2, 8, 4, 6, 1, 123, 5, 90]
 const minMaxlist = [...list].sort((a, b) => a - b);
