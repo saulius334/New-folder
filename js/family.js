@@ -52,25 +52,25 @@ const family = [
     },
 ];
 
-function oldest(list) {
+function oldest(list, depth = 0) {
     let age = 0;
+    let name = ``
 for (const person of list) {
     if (person.age > age) {
         age = person.age;
+        name = person.name
     }
     if (person.children && person.children.length > 0) {
-        const oldestchild = oldest(person.children);
-        if (oldestchild > age) {
-            age = oldestchild;
+        const oldestchild = oldest(person.children, depth+1);
+        if (oldestchild.age > age) {
+            age = oldestchild.age;
+            name = oldestchild.name
         }
     }
 }
+console.log(depth, {name, age});
+return depth === 0 ? `${name} is ${age} years old` : {name, age};
 
-
-
-
-const wtf = Object.keys(family).find(key => family[key] === age)
-return wtf
 }
 
 console.log(oldest(family));
