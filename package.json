@@ -20,6 +20,7 @@
     "arrow": "nodemon ./js/arrow.js",
     "random": "nodemon ./js/random.js",
     "numcount": "nodemon ./js/numcount.js",
+    "pc-storage": "nodemon ./js/pc-storage.js",
     "spread": "nodemon ./js/spread.js",
     "switch": "nodemon ./js/switch.js",
     "other-loops": "nodemon ./js/other-loops.js",
