@@ -14,6 +14,7 @@
     "ternary": "nodemon ./js/ternary.js",
     "array": "nodemon ./js/array.js",
     "for": "nodemon ./js/for.js",
+    "multiarrays": "nodemon ./js/multiarrays.js",
     "destructuring": "nodemon ./js/destructuring.js",
     "family": "nodemon ./js/family.js",
     "set": "nodemon ./js/set.js",
