@@ -28,7 +28,7 @@ const files = [
 
 ]
 
-function fileSearch(input) {
+function fileSearch(input) { // fuzzyFinding = false;
     return {
         folder: [],
         files: [],
